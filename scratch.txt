@@ -1,0 +1,37 @@
+Comments on google-services.json:
+
+The google-services.json file is configured for Firebase connection.
+Do not modify this file directly to avoid issues with the Firebase connection.
+
+
+Folder structure for the project:
+
+    activities: In this folder, I will manage the main activities of the computer components
+sales application, such as ProductListActivity, where the product list will be displayed, and ProductDetailActivity to view the details of each product.
+
+    database: Although my application will use Firebase as the main backend, this folder
+can be useful if later I decide to add some type of local storage (e.g., cache or data persistence with SQLite).
+
+    models: Here I will define the models or entities that I will use in my application,
+such as Producto.kt, Categoria.kt, etc. These classes will represent the data in my domain.
+
+    repositories: I will implement the repositories here to manage the interaction with Firebase.
+The repositories will be responsible for retrieving products, handling purchases, and any other interaction with the backend or data sources.
+
+    ui.theme: In this folder, I will handle the interface customization, such as themes or styles
+for the application, ensuring that the visual experience is consistent across all screens.
+
+    utils: This folder will contain utility functions or helper classes that I can reuse
+in various parts of the application, such as validations, data conversions, or any other auxiliary logic.
+
+    viewmodels: In this folder, I will organize the ViewModels that will manage the logic
+for each screen or section. For example, a ProductViewModel to manage the logic for the product list and its interaction with the repositories.
+
+    fragments: I will add a folder named fragments to store the application's fragments,
+as the activities will mainly serve as containers for fragments. This will allow me to better organize the user interface.
+
+    network: If at some point I decide to integrate external APIs,
+I will create a folder network to manage network requests and keep this logic separate from other layers of the application.
+
+    This structure will allow me to follow a clear and organized approach
+to develop my computer components sales application, keeping the logic well-separated and easily scalable.
